@@ -24,21 +24,28 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-cream/90 shadow-sm backdrop-blur-md' : 'bg-transparent'
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? 'border-b border-slate-200/70 bg-cream/85 shadow-[0_1px_0_rgba(15,23,42,0.04)] backdrop-blur-md'
+          : 'border-b border-transparent bg-transparent'
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-center gap-3">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-navy font-display text-lg font-bold text-gold">
+      <div
+        className={`mx-auto flex max-w-6xl items-center justify-between px-6 transition-[padding] duration-500 ${
+          scrolled ? 'py-3' : 'py-4'
+        }`}
+      >
+        <a href="#top" className="group flex items-center gap-3">
+          <span className="relative grid h-9 w-9 place-items-center rounded-md bg-navy font-display text-lg font-bold text-gold ring-1 ring-gold/20 transition-shadow group-hover:ring-gold/60">
             C
+            <span className="absolute -right-0.5 -top-0.5 h-1.5 w-1.5 rounded-full bg-gold opacity-70 transition-opacity group-hover:opacity-100" />
           </span>
           <span className="flex flex-col leading-tight">
             <span className="font-display text-base font-semibold tracking-tight text-navy">
               Character Academy
             </span>
-            <span className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
-              International · Since 2002
+            <span className="text-[11px] uppercase tracking-[0.2em] text-slate-500">
+              International <span className="text-gold">·</span> Since 2002
             </span>
           </span>
         </a>
@@ -48,18 +55,20 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-slate-700 transition-colors hover:text-navy"
+              className="group relative text-sm text-slate-700 transition-colors hover:text-navy"
             >
               {l.label}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
           <a
             href="https://wa.me/60126111677"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-navy px-4 py-2 text-sm font-medium text-cream transition-colors hover:bg-navy-dark"
+            className="group inline-flex items-center gap-2 rounded-full bg-navy px-4 py-2 text-sm font-medium text-cream shadow-soft transition-all hover:bg-navy-dark hover:shadow-lift"
           >
             WhatsApp us
+            <span className="transition-transform group-hover:translate-x-0.5">→</span>
           </a>
         </nav>
 

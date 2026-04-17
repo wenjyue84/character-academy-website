@@ -3,17 +3,31 @@ import Image from 'next/image';
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-cream pt-28 pb-20 md:pt-36 md:pb-28">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1.1fr_1fr] md:gap-14">
+      {/* Ambient background layers — warm wash + faint grid */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(212,168,106,0.18),transparent_60%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-faint-grid bg-grid-32 opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]"
+      />
+
+      <div className="relative mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1.1fr_1fr] md:gap-14">
         <div className="relative z-10 pt-4">
-          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs uppercase tracking-[0.18em] text-gold-dark">
-            <span className="h-1.5 w-1.5 rounded-full bg-gold" /> JPK-accredited · since 2002
+          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs uppercase tracking-[0.2em] text-gold-dark shadow-sm">
+            <span className="relative inline-flex h-1.5 w-1.5">
+              <span className="absolute inset-0 animate-ping rounded-full bg-gold/60" />
+              <span className="relative h-1.5 w-1.5 rounded-full bg-gold" />
+            </span>
+            JPK-accredited · since 2002
           </p>
-          <h1 className="font-display text-[2.6rem] leading-[1.05] text-navy md:text-6xl">
+          <h1 className="font-display text-[2.6rem] leading-[1.03] tracking-display text-navy md:text-6xl">
             Structured skills.
             <br />
             <span className="accent-underline">Recognised</span> by the nation.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-700">
+          <p className="mt-7 max-w-xl text-lg leading-relaxed text-slate-700">
             Character International Academy is a Malaysian TVET institution and corporate
             workforce-development consultancy. For more than two decades we've helped over
             <span className="font-semibold text-navy"> 4,500 learners </span>
@@ -24,24 +38,32 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-full bg-navy px-6 py-3 font-medium text-cream transition-colors hover:bg-navy-dark"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 font-medium text-cream shadow-soft transition-all hover:bg-navy-dark hover:shadow-lift"
             >
               Talk to Jennifer
+              <span className="transition-transform group-hover:translate-x-0.5">→</span>
             </a>
             <a
               href="#services"
-              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 font-medium text-navy transition-colors hover:border-navy hover:bg-white"
+              className="group inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white/70 px-6 py-3 font-medium text-navy backdrop-blur transition-all hover:border-navy hover:bg-white hover:shadow-soft"
             >
               See our services
+              <span className="text-gold-dark transition-transform group-hover:translate-x-0.5">↘</span>
             </a>
           </div>
-          <p className="mt-6 text-sm text-slate-500">
+          <p className="mt-7 flex items-center gap-3 text-sm text-slate-500">
+            <span className="rule-gold" />
             HQ No. 82, Jalan Ali, Muar · Branches in Johor Bahru, Kluang &amp; Seremban
           </p>
         </div>
 
         <div className="relative">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-sand shadow-lg md:translate-y-6">
+          {/* Warm mat behind image */}
+          <div
+            aria-hidden
+            className="absolute -inset-4 -z-10 rounded-2xl bg-gradient-to-br from-gold/15 via-sand/40 to-transparent blur-[2px] md:translate-y-6"
+          />
+          <div className="image-frame relative aspect-[4/5] overflow-hidden rounded-xl bg-sand shadow-lift md:translate-y-6">
             <Image
               src="/images/hero/cover.jpg"
               alt="Character Academy training in progress — learners, assessors and workplace partners working together."
@@ -50,8 +72,25 @@ export function Hero() {
               className="object-cover"
               sizes="(min-width: 768px) 40vw, 100vw"
             />
+            {/* Subtle bottom gradient for depth */}
+            <div
+              aria-hidden
+              className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy/25 to-transparent"
+            />
           </div>
-          <div className="absolute -left-6 bottom-6 hidden max-w-[18rem] rounded-md bg-navy p-5 text-cream shadow-xl md:block">
+          <div className="absolute -left-6 bottom-6 hidden max-w-[18rem] rounded-md bg-navy p-5 text-cream shadow-xl ring-1 ring-navy-dark md:block">
+            <span
+              aria-hidden
+              className="absolute -top-2 left-5 h-4 w-8 rounded-t-full bg-gold"
+            />
+            <svg
+              aria-hidden
+              className="mb-3 h-5 w-5 text-gold"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M7.17 6C4.86 6 3 7.86 3 10.17V18h7v-7.83H6.5C6.5 8.97 7.47 8 8.67 8H10V6H7.17zm10 0C14.86 6 13 7.86 13 10.17V18h7v-7.83h-3.5c0-1.2.97-2.17 2.17-2.17H20V6h-2.83z" />
+            </svg>
             <p className="font-display text-lg leading-snug">
               "Adapting to and embracing change is key to long-term success."
             </p>
@@ -63,7 +102,16 @@ export function Hero() {
       </div>
 
       {/* Decorative deep-navy band */}
-      <div className="pointer-events-none absolute -bottom-20 -right-24 h-56 w-[40rem] rotate-[-4deg] bg-navy/5 md:-bottom-32" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -bottom-20 -right-24 h-56 w-[40rem] rotate-[-4deg] bg-navy/5 md:-bottom-32"
+      />
+      {/* Subtle scroll-hint */}
+      <div className="pointer-events-none absolute bottom-6 left-1/2 hidden -translate-x-1/2 text-[10px] uppercase tracking-[0.3em] text-slate-400 md:block">
+        <span className="inline-flex items-center gap-2">
+          <span className="h-px w-6 bg-slate-300" /> scroll <span className="h-px w-6 bg-slate-300" />
+        </span>
+      </div>
     </section>
   );
 }

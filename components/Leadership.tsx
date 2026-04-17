@@ -35,7 +35,11 @@ const others = [
 
 export function Leadership() {
   return (
-    <section id="team" className="bg-sand/50 py-20 md:py-28">
+    <section id="team" className="relative bg-sand/50 py-20 md:py-28">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"
+      />
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Leadership"
@@ -43,7 +47,7 @@ export function Leadership() {
         />
 
         {/* Jennifer Tan — main card */}
-        <div className="mt-14 reveal overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-slate-200">
+        <div className="reveal mt-14 overflow-hidden rounded-xl bg-white shadow-lift ring-1 ring-slate-200">
           <div className="grid gap-0 md:grid-cols-[1fr_1.3fr]">
             <div className="relative aspect-[3/4] bg-sand md:aspect-auto">
               <Image
@@ -53,12 +57,23 @@ export function Leadership() {
                 className="object-cover"
                 sizes="(min-width: 768px) 40vw, 100vw"
               />
+              {/* Warm duotone overlay for cohesion */}
+              <div
+                aria-hidden
+                className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-gold/10 mix-blend-multiply"
+              />
             </div>
-            <div className="p-8 md:p-10">
-              <p className="text-xs font-medium uppercase tracking-[0.22em] text-gold-dark">
-                Group Leader · Founder
+            <div className="relative p-8 md:p-10">
+              <span
+                aria-hidden
+                className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-gold via-gold-light to-gold-dark md:block"
+              />
+              <p className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.24em] text-gold-dark">
+                <span className="rule-gold" aria-hidden /> Group Leader · Founder
               </p>
-              <h3 className="mt-2 font-display text-3xl text-navy">Jennifer Tan</h3>
+              <h3 className="mt-2 font-display text-3xl tracking-display text-navy">
+                Jennifer Tan
+              </h3>
               <p className="mt-4 text-slate-700">
                 Founder of Character International Academy. Thirty years in corporate management
                 and two decades running JPK-accredited training work — with a track record that
@@ -66,22 +81,29 @@ export function Leadership() {
                 for Malaysian TVET.
               </p>
 
-              <ol className="mt-7 border-l border-gold/40 pl-6">
+              <ol className="mt-7 border-l-2 border-gold/40 pl-6">
                 {timeline.map((t) => (
-                  <li key={t.role} className="relative pb-4 last:pb-0">
-                    <span className="absolute -left-[1.65rem] top-2 grid h-3 w-3 place-items-center">
-                      <span className="h-2.5 w-2.5 rounded-full bg-gold" />
+                  <li key={t.role} className="group relative pb-4 last:pb-0">
+                    <span className="absolute -left-[1.8rem] top-2 grid h-4 w-4 place-items-center">
+                      <span className="h-2 w-2 rounded-full bg-gold ring-4 ring-gold/20 transition-all group-hover:scale-125 group-hover:ring-gold/40" />
                     </span>
-                    <span className="font-display text-lg text-navy">{t.years}</span>
+                    <span className="font-display text-lg tracking-display text-navy">
+                      {t.years}
+                    </span>
                     <span className="ml-2 text-slate-600">{t.role}</span>
                   </li>
                 ))}
               </ol>
 
-              <div className="mt-6 rounded-md border border-gold/20 bg-gold/5 p-4">
+              <div className="mt-6 rounded-md border border-gold/25 bg-gradient-to-br from-gold/5 to-transparent p-4">
+                <p className="mb-2 text-[10px] font-medium uppercase tracking-[0.24em] text-gold-dark">
+                  Invited speaker
+                </p>
                 {guest.map((g) => (
                   <p key={g.year} className="text-sm text-slate-700">
-                    <span className="font-display text-base text-gold-dark">{g.year}</span>{' '}
+                    <span className="font-display text-base tracking-display text-gold-dark">
+                      {g.year}
+                    </span>{' '}
                     — {g.note}
                   </p>
                 ))}
@@ -91,27 +113,29 @@ export function Leadership() {
         </div>
 
         {/* Team */}
-        <div className="mt-10 grid gap-8 md:grid-cols-2">
+        <div className="reveal-stagger mt-10 grid gap-8 md:grid-cols-2">
           {others.map((p) => (
             <div
               key={p.name}
-              className="reveal overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-slate-200"
+              className="reveal card-hover group overflow-hidden rounded-xl bg-white shadow-soft ring-1 ring-slate-200 hover:shadow-lift"
             >
               <div className="flex gap-5 p-6 md:p-7">
-                <div className="relative h-24 w-24 flex-none overflow-hidden rounded-md bg-sand">
+                <div className="image-frame relative h-24 w-24 flex-none overflow-hidden rounded-md bg-sand">
                   <Image
                     src={p.image}
                     alt={`${p.name}, ${p.role}`}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="96px"
                   />
                 </div>
                 <div>
-                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-gold-dark">
-                    {p.role}
+                  <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.24em] text-gold-dark">
+                    <span className="inline-block h-px w-4 bg-gold/60" /> {p.role}
                   </p>
-                  <h4 className="mt-1 font-display text-xl text-navy">{p.name}</h4>
+                  <h4 className="mt-1 font-display text-xl tracking-display text-navy">
+                    {p.name}
+                  </h4>
                   <p className="mt-2 text-sm leading-relaxed text-slate-700">{p.body}</p>
                 </div>
               </div>

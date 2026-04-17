@@ -5,19 +5,32 @@ export function About() {
   return (
     <section id="about" className="py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-[1fr_1.2fr] md:gap-16">
-        <div className="relative">
-          <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-sand shadow">
+        <div className="reveal relative">
+          {/* Warm mat */}
+          <div
+            aria-hidden
+            className="absolute -left-3 -top-3 h-full w-full rounded-xl border border-gold/30"
+          />
+          <div className="image-frame relative aspect-[3/4] overflow-hidden rounded-xl bg-sand shadow-lift">
             <Image
               src="/images/sections/about-company.jpg"
               alt="Character Academy training room"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-700 hover:scale-[1.03]"
               sizes="(min-width: 768px) 40vw, 100vw"
             />
           </div>
-          <div className="absolute -bottom-6 -right-4 rounded-md bg-cream px-5 py-4 shadow-md ring-1 ring-slate-200">
-            <p className="font-display text-3xl font-semibold text-navy">20+ years</p>
-            <p className="text-xs uppercase tracking-wider text-slate-500">of training experience</p>
+          <div className="absolute -bottom-6 -right-4 overflow-hidden rounded-md bg-cream px-5 py-4 shadow-lift ring-1 ring-slate-200">
+            <span
+              aria-hidden
+              className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-gold via-gold-light to-gold-dark"
+            />
+            <p className="font-display text-3xl font-semibold tracking-display text-navy">
+              20+ years
+            </p>
+            <p className="text-xs uppercase tracking-wider text-slate-500">
+              of training experience
+            </p>
           </div>
         </div>
 

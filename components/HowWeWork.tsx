@@ -43,21 +43,33 @@ export function HowWeWork() {
           lead="Needs → Standards → Programme → Implementation → Certification → Sustainability. Skipping a step is how training ends up not fitting the job."
         />
 
-        <ol className="mt-14 grid gap-6 md:grid-cols-2">
+        <ol className="reveal-stagger mt-14 grid gap-6 md:grid-cols-2">
           {steps.map((s, i) => (
             <li
               key={s.title}
-              className="reveal relative rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md md:p-7"
+              className="reveal card-hover group relative overflow-hidden rounded-xl border border-slate-200 bg-white p-6 shadow-soft hover:shadow-lift md:p-7"
             >
+              <span
+                aria-hidden
+                className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-gold/0 via-gold to-gold/0 transition-transform duration-500 group-hover:scale-x-100"
+              />
               <div className="flex items-baseline gap-4">
-                <span className="font-display text-4xl font-semibold text-gold/40">
+                <span className="font-display text-[3rem] font-semibold leading-none text-gold/40 transition-colors group-hover:text-gold">
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <h3 className="font-display text-xl leading-snug text-navy">{s.title}</h3>
+                <h3 className="font-display text-xl leading-snug tracking-display text-navy">
+                  {s.title}
+                </h3>
               </div>
-              <p className="mt-3 pl-[3.75rem] text-[0.98rem] leading-relaxed text-slate-700">
+              <p className="mt-3 pl-[4rem] text-[0.98rem] leading-relaxed text-slate-700">
                 {s.body}
               </p>
+              <span
+                aria-hidden
+                className="absolute bottom-4 right-5 text-gold/0 transition-all duration-300 group-hover:text-gold group-hover:translate-x-0.5"
+              >
+                →
+              </span>
             </li>
           ))}
         </ol>

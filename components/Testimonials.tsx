@@ -47,24 +47,32 @@ function QuoteCard({
   quote: string;
 }) {
   return (
-    <figure className="reveal flex flex-col rounded-lg border border-slate-200 bg-white p-7 shadow-sm md:p-8">
-      <svg
-        className="mb-4 h-7 w-7 text-gold"
-        viewBox="0 0 24 24"
-        fill="currentColor"
+    <figure className="reveal card-hover group relative flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white p-7 shadow-soft hover:shadow-lift md:p-8">
+      <span
         aria-hidden
+        className="absolute -right-4 -top-4 font-display text-[7rem] leading-none text-gold/10 select-none"
       >
-        <path d="M7.17 6C4.86 6 3 7.86 3 10.17V18h7v-7.83H6.5C6.5 8.97 7.47 8 8.67 8H10V6H7.17zm10 0C14.86 6 13 7.86 13 10.17V18h7v-7.83h-3.5c0-1.2.97-2.17 2.17-2.17H20V6h-2.83z" />
-      </svg>
-      <blockquote className="flex-1 text-[0.98rem] leading-relaxed text-slate-700">
+        &ldquo;
+      </span>
+      <span className="relative mb-4 grid h-9 w-9 place-items-center rounded-full bg-gold/10 ring-1 ring-gold/30">
+        <svg
+          className="h-4 w-4 text-gold-dark"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden
+        >
+          <path d="M7.17 6C4.86 6 3 7.86 3 10.17V18h7v-7.83H6.5C6.5 8.97 7.47 8 8.67 8H10V6H7.17zm10 0C14.86 6 13 7.86 13 10.17V18h7v-7.83h-3.5c0-1.2.97-2.17 2.17-2.17H20V6h-2.83z" />
+        </svg>
+      </span>
+      <blockquote className="relative flex-1 text-[0.98rem] leading-relaxed text-slate-700">
         {quote}
       </blockquote>
-      <figcaption className="mt-6 flex items-center gap-4 border-t border-slate-100 pt-5">
-        <div className="relative h-12 w-12 flex-none overflow-hidden rounded-full bg-sand">
-          <Image src={image} alt={name} fill className="object-cover" sizes="48px" />
+      <figcaption className="relative mt-6 flex items-center gap-4 border-t border-slate-100 pt-5">
+        <div className="image-frame relative h-14 w-14 flex-none overflow-hidden rounded-full bg-sand ring-2 ring-gold/30">
+          <Image src={image} alt={name} fill className="object-cover" sizes="56px" />
         </div>
         <div>
-          <p className="font-display text-base text-navy">{name}</p>
+          <p className="font-display text-base tracking-display text-navy">{name}</p>
           <p className="text-xs uppercase tracking-wider text-slate-500">{role}</p>
         </div>
       </figcaption>
@@ -82,10 +90,10 @@ export function Testimonials() {
         />
 
         <div className="mt-12">
-          <p className="mb-5 text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-            Corporate
+          <p className="mb-5 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.24em] text-slate-500">
+            <span className="rule-gold" aria-hidden /> Corporate
           </p>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="reveal-stagger grid gap-6 md:grid-cols-2">
             {corporate.map((t) => (
               <QuoteCard key={t.name} {...t} />
             ))}
@@ -93,10 +101,10 @@ export function Testimonials() {
         </div>
 
         <div className="mt-14">
-          <p className="mb-5 text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-            Individual
+          <p className="mb-5 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.24em] text-slate-500">
+            <span className="rule-gold" aria-hidden /> Individual
           </p>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="reveal-stagger grid gap-6 md:grid-cols-2">
             {individual.map((t) => (
               <QuoteCard key={t.name} {...t} />
             ))}

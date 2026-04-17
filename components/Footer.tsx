@@ -1,22 +1,35 @@
 export function Footer() {
   return (
-    <footer className="bg-navy-ink text-cream/70">
-      <div className="mx-auto max-w-6xl px-6 py-14">
+    <footer className="relative overflow-hidden bg-navy-ink text-cream/70">
+      {/* Subtle grain + gold accent line */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-grain opacity-[0.25] mix-blend-overlay"
+      />
+      <div
+        aria-hidden
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"
+      />
+      <div className="relative mx-auto max-w-6xl px-6 py-14">
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
-              <span className="grid h-9 w-9 place-items-center rounded-md bg-gold font-display text-lg font-bold text-navy">
+              <span className="grid h-9 w-9 place-items-center rounded-md bg-gradient-to-br from-gold-light to-gold-dark font-display text-lg font-bold text-navy ring-1 ring-gold/40 shadow-soft">
                 C
               </span>
               <div>
-                <p className="font-display text-lg text-cream">Character Academy</p>
-                <p className="text-xs uppercase tracking-[0.18em]">International · Since 2002</p>
+                <p className="font-display text-lg tracking-display text-cream">
+                  Character Academy
+                </p>
+                <p className="text-xs uppercase tracking-[0.2em]">
+                  International <span className="text-gold">·</span> Since 2002
+                </p>
               </div>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
               Character International Academy Sdn. Bhd.
               <br />
-              <span className="font-display">名门全能美学职业培训学院</span>
+              <span className="font-display tracking-display">名门全能美学职业培训学院</span>
               <br />
               A JPK-accredited TVET institution based in Muar, Johor — serving Malaysia's
               workforce development agenda for more than two decades.
@@ -24,31 +37,49 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="mb-4 text-xs font-medium uppercase tracking-[0.22em] text-gold-light">
-              Quick links
+            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.24em] text-gold-light">
+              <span className="inline-block h-px w-4 bg-gold/60" /> Quick links
             </p>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="hover:text-cream">About</a></li>
-              <li><a href="#how" className="hover:text-cream">How we work</a></li>
-              <li><a href="#services" className="hover:text-cream">Services</a></li>
-              <li><a href="#projects" className="hover:text-cream">Projects</a></li>
-              <li><a href="#team" className="hover:text-cream">Leadership</a></li>
-              <li><a href="#contact" className="hover:text-cream">Contact</a></li>
+              {[
+                ['#about', 'About'],
+                ['#how', 'How we work'],
+                ['#services', 'Services'],
+                ['#projects', 'Projects'],
+                ['#team', 'Leadership'],
+                ['#contact', 'Contact'],
+              ].map(([href, label]) => (
+                <li key={href}>
+                  <a
+                    href={href}
+                    className="inline-flex items-center gap-2 text-cream/70 transition-colors hover:text-gold-light"
+                  >
+                    <span className="h-px w-2 bg-gold/0 transition-all hover:w-3 group-hover:w-3" />
+                    {label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <p className="mb-4 text-xs font-medium uppercase tracking-[0.22em] text-gold-light">
-              Contact
+            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.24em] text-gold-light">
+              <span className="inline-block h-px w-4 bg-gold/60" /> Contact
             </p>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://wa.me/60126111677" className="hover:text-cream">
+                <a
+                  href="https://wa.me/60126111677"
+                  className="text-cream/70 transition-colors hover:text-gold-light"
+                >
                   +6012 6111 677
                 </a>
               </li>
               <li>
-                <a href="mailto:jennifer@character.com.mx" className="hover:text-cream">
+                <a
+                  href="mailto:jennifer@character.com.mx"
+                  className="text-cream/70 transition-colors hover:text-gold-light"
+                >
                   jennifer@character.com.mx
                 </a>
               </li>
@@ -57,7 +88,7 @@ export function Footer() {
                   href="https://facebook.com/Character2002"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-cream"
+                  className="text-cream/70 transition-colors hover:text-gold-light"
                 >
                   facebook.com/Character2002
                 </a>
@@ -70,8 +101,21 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-cream/10 pt-6 text-xs text-cream/50 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} Character International Academy Sdn. Bhd. All rights reserved.</p>
-          <p>SKM · DKM · DLKM · HRD Corp Claimable · ADI-Perantisan</p>
+          <p>
+            © {new Date().getFullYear()} Character International Academy Sdn. Bhd.{' '}
+            All rights reserved.
+          </p>
+          <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span>SKM</span>
+            <span className="text-gold/60">·</span>
+            <span>DKM</span>
+            <span className="text-gold/60">·</span>
+            <span>DLKM</span>
+            <span className="text-gold/60">·</span>
+            <span>HRD Corp Claimable</span>
+            <span className="text-gold/60">·</span>
+            <span>ADI-Perantisan</span>
+          </p>
         </div>
       </div>
     </footer>
