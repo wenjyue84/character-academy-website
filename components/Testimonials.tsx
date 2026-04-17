@@ -5,14 +5,14 @@ const corporate = [
   {
     name: 'Karen Tang',
     role: 'Industry Partner · Skills Development Sector',
-    image: '/images/testimonials/karen-tang.png',
+    image: '/images/testimonials/karen-tang.jpg',
     quote:
       "Working with Character Academy has strengthened our organisation's capability in implementing structured skills development. Their expertise in national skills certification and industry-aligned training provided clear direction for our workforce planning. The professional support and collaborative approach have improved employee competency and enhanced overall service quality.",
   },
   {
     name: 'Mr. Tan',
     role: 'CEO, Cottonrose Group · Founder, Supreme Automotive Academy Sdn Bhd',
-    image: '/images/testimonials/mr-tan.jpg',
+    image: '/images/testimonials/mr-tan.png',
     quote:
       "Character Academy provided structured workforce development solutions that significantly improved our internal training system. Their competency-based approach and guidance on certification pathways helped our employees enhance their skills and performance. We also observed better training consistency and improved team confidence. The collaboration has contributed positively to our operational efficiency and talent development strategy.",
   },
