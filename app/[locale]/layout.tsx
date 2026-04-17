@@ -4,6 +4,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { RevealObserver } from '@/components/RevealObserver';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -144,25 +145,10 @@ export default async function LocaleLayout({
   return (
     <html lang={htmlLang} className={`${inter.variable} ${fraunces.variable}`}>
       <body className="min-h-screen bg-cream font-sans text-slate-800 antialiased">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){
-                if (typeof IntersectionObserver === 'undefined') return;
-                var io = new IntersectionObserver(function(entries){
-                  entries.forEach(function(e){
-                    if (e.isIntersecting) {
-                      e.target.classList.add('in');
-                      io.unobserve(e.target);
-                    }
-                  });
-                }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
-                document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-              })();
-            `,
-          }}
-        />
+        <NextIntlClientProvider>
+          {children}
+          <RevealObserver />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
