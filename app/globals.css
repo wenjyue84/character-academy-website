@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FBF8F1;
+  color: #1E293B;
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #B8894A;
+  color: #FBF8F1;
+}
+
+/* Hand-drawn underline accent used for keyword emphasis. */
+.accent-underline {
+  background-image: linear-gradient(transparent 65%, rgba(184, 137, 74, 0.35) 0);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 0.15rem;
+}
+
+/* Subtle fade-in on scroll — triggered via data-attribute in layout. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
