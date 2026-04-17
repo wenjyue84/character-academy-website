@@ -1,59 +1,35 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { SectionHeading } from './SectionHeading';
 
-const projects = [
-  {
-    tag: 'Apprenticeship',
-    title: 'Industry-Based Apprenticeship Development',
-    metric: '80+ companies',
-    body:
-      "We partnered with more than eighty employers to stand up industry-based apprenticeship programmes aligned with Malaysia's national TVET agenda. Workplace learning was woven together with competency-based classroom training, so apprentices developed skill and context at the same time.",
-    outcomes: [
-      'Measurably stronger workforce capability',
-      'Repeatable structured talent-development system',
-      'Tighter operational consistency across teams',
-    ],
-    image: '/images/sections/project-apprenticeship.jpg',
-  },
-  {
-    tag: 'National Certification',
-    title: 'National Skills Certification Pathway',
-    metric: '4,500+ learners',
-    body:
-      "Character Academy's largest and longest-running initiative: helping experienced workers obtain formal recognition of what they already know how to do. Through structured pathways — including Recognition of Prior Achievement (PPT) — workers across multiple sectors earned nationally recognised SKM / DKM / DLKM certificates.",
-    outcomes: [
-      'Improved employability and upward mobility',
-      'Credentials that match existing on-the-job competence',
-      "Growth of Malaysia's certified-skilled workforce",
-    ],
-    image: '/images/sections/market-presence.jpg',
-  },
-  {
-    tag: 'Retention',
-    title: 'Corporate Workforce Development & Talent Retention',
-    metric: 'Fewer quits. More growth.',
-    body:
-      'We helped companies design and implement full talent retention systems — not just training, but the connective tissue around it: competency mapping, training-matrix development, and certification-based career-progression planning.',
-    outcomes: [
-      'Higher employee capability across the board',
-      'Greater training consistency between teams and branches',
-      'Measurably reduced turnover',
-    ],
-    image: '/images/sections/how-we-work.png',
-  },
+const images = [
+  '/images/sections/project-apprenticeship.jpg',
+  '/images/sections/market-presence.jpg',
+  '/images/sections/how-we-work.png',
 ];
 
+type ProjectItem = {
+  tag: string;
+  title: string;
+  metric: string;
+  body: string;
+  outcomes: string[];
+};
+
 export function Projects() {
+  const t = useTranslations('projects');
+  const items = t.raw('items') as ProjectItem[];
+
   return (
     <section id="projects" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          eyebrow="Projects"
-          title="Three initiatives that show how the approach holds up in practice."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
         />
 
         <div className="mt-16 space-y-20">
-          {projects.map((p, i) => {
+          {items.map((p, i) => {
             const reversed = i % 2 === 1;
             return (
               <article
@@ -70,7 +46,7 @@ export function Projects() {
                   />
                   <div className="image-frame relative aspect-[4/3] overflow-hidden rounded-xl bg-sand shadow-lift">
                     <Image
-                      src={p.image}
+                      src={images[i]}
                       alt={p.title}
                       fill
                       className="object-cover transition-transform duration-700 hover:scale-[1.03]"
@@ -81,7 +57,7 @@ export function Projects() {
                 <div>
                   <p className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.24em] text-gold-dark">
                     <span className="rule-gold" aria-hidden />
-                    Project {String(i + 1).padStart(2, '0')} · {p.tag}
+                    {t('projectLabel')} {String(i + 1).padStart(2, '0')} · {p.tag}
                   </p>
                   <h3 className="mt-3 font-display text-2xl leading-snug tracking-display text-navy md:text-3xl">
                     {p.title}

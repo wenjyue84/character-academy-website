@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export function Hero() {
+  const t = useTranslations('hero');
+
   return (
     <section className="relative overflow-hidden bg-cream pt-28 pb-20 md:pt-36 md:pb-28">
       {/* Ambient background layers — warm wash + faint grid */}
@@ -20,40 +23,39 @@ export function Hero() {
               <span className="absolute inset-0 animate-ping rounded-full bg-gold/60" />
               <span className="relative h-1.5 w-1.5 rounded-full bg-gold" />
             </span>
-            JPK-accredited · since 2002
+            {t('badge')}
           </p>
           <h1 className="font-display text-[2.6rem] leading-[1.03] tracking-display text-navy md:text-6xl">
-            Structured skills.
+            {t('headlineLine1')}
             <br />
-            <span className="accent-underline">Recognised</span> by the nation.
+            <span className="accent-underline">{t('headlineAccent')}</span>{t('headlineLine2')}
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-slate-700">
-            Character International Academy is a Malaysian TVET institution and corporate
-            workforce-development consultancy. For more than two decades we've helped over
-            <span className="font-semibold text-navy"> 4,500 learners </span>
-            earn SKM, DKM and DLKM certification, and worked with
-            <span className="font-semibold text-navy"> 80+ companies </span>
-            to build training systems that actually stay in place.
+            {t('leadPrefix')}
+            <span className="font-semibold text-navy">{t('leadLearners')}</span>
+            {t('leadMid')}
+            <span className="font-semibold text-navy">{t('leadCompanies')}</span>
+            {t('leadSuffix')}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#contact"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 font-medium text-cream shadow-soft transition-all hover:bg-navy-dark hover:shadow-lift"
             >
-              Talk to Jennifer
+              {t('ctaPrimary')}
               <span className="transition-transform group-hover:translate-x-0.5">→</span>
             </a>
             <a
               href="#services"
               className="group inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white/70 px-6 py-3 font-medium text-navy backdrop-blur transition-all hover:border-navy hover:bg-white hover:shadow-soft"
             >
-              See our services
+              {t('ctaSecondary')}
               <span className="text-gold-dark transition-transform group-hover:translate-x-0.5">↘</span>
             </a>
           </div>
           <p className="mt-7 flex items-center gap-3 text-sm text-slate-500">
             <span className="rule-gold" />
-            HQ No. 82, Jalan Ali, Muar · Branches in Johor Bahru, Kluang &amp; Seremban
+            {t('locations')}
           </p>
         </div>
 
@@ -92,10 +94,10 @@ export function Hero() {
               <path d="M7.17 6C4.86 6 3 7.86 3 10.17V18h7v-7.83H6.5C6.5 8.97 7.47 8 8.67 8H10V6H7.17zm10 0C14.86 6 13 7.86 13 10.17V18h7v-7.83h-3.5c0-1.2.97-2.17 2.17-2.17H20V6h-2.83z" />
             </svg>
             <p className="font-display text-lg leading-snug">
-              "Adapting to and embracing change is key to long-term success."
+              &ldquo;{t('quote')}&rdquo;
             </p>
             <p className="mt-3 text-xs uppercase tracking-widest text-gold-light">
-              Jennifer Tan — Founder
+              {t('quoteAttribution')}
             </p>
           </div>
         </div>

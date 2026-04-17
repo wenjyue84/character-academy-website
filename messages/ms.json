@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Character International Academy — Pensijilan Kemahiran Kebangsaan TVET di Malaysia",
+    "titleTemplate": "%s · Character International Academy",
+    "description": "Institusi TVET Malaysia bertauliah JPK yang membantu lebih 4,500 pelajar memperoleh pensijilan SKM/DKM/DLKM dan 80+ syarikat membina pembangunan tenaga kerja yang berstruktur. Ditubuhkan 2002 · Ibu Pejabat Muar, Johor.",
+    "ogDescription": "Lebih 20 tahun latihan TVET berstruktur berasaskan kompetensi merentasi Muar, Johor Bahru, Kluang dan Seremban. Bertauliah JPK · SKM · DKM · DLKM · ADI-Perantisan · Tuntutan HRD Corp.",
+    "twitterDescription": "TVET Malaysia bertauliah JPK · SKM / DKM / DLKM · ADI-Perantisan · Latihan tuntutan HRD Corp. Sejak 2002.",
+    "skipToMain": "Langkau ke kandungan utama"
+  },
+  "nav": {
+    "brand": "Character Academy",
+    "brandTagline": "Antarabangsa · Sejak 2002",
+    "brandAria": "Character International Academy — kembali ke atas",
+    "about": "Tentang Kami",
+    "how": "Cara Kami Bekerja",
+    "services": "Perkhidmatan",
+    "projects": "Projek",
+    "team": "Pasukan",
+    "contact": "Hubungi",
+    "whatsapp": "Hubungi via WhatsApp",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu"
+  },
+  "language": {
+    "label": "Bahasa",
+    "en": "EN",
+    "ms": "BM",
+    "zh": "中文"
+  },
+  "hero": {
+    "badge": "Bertauliah JPK · sejak 2002",
+    "headlineLine1": "Kemahiran berstruktur.",
+    "headlineAccent": "Diiktiraf",
+    "headlineLine2": " oleh negara.",
+    "leadPrefix": "Character International Academy ialah institusi TVET Malaysia dan perunding pembangunan tenaga kerja korporat. Selama lebih dua dekad, kami telah membantu lebih ",
+    "leadLearners": "4,500 pelajar",
+    "leadMid": " memperoleh pensijilan SKM, DKM dan DLKM, dan bekerjasama dengan ",
+    "leadCompanies": "80+ syarikat",
+    "leadSuffix": " untuk membina sistem latihan yang benar-benar kekal.",
+    "ctaPrimary": "Bercakap dengan Jennifer",
+    "ctaSecondary": "Lihat perkhidmatan kami",
+    "locations": "Ibu Pejabat No. 82, Jalan Ali, Muar · Cawangan di Johor Bahru, Kluang & Seremban",
+    "quote": "Menerima dan menyesuaikan diri dengan perubahan adalah kunci kejayaan jangka panjang.",
+    "quoteAttribution": "Jennifer Tan — Pengasas"
+  },
+  "stats": {
+    "items": [
+      { "value": "4,500+", "label": "Pelajar bertauliah di bawah SKM · DKM · DLKM" },
+      { "value": "80+", "label": "Rakan korporat dalam program perantisan" },
+      { "value": "24 thn", "label": "Sebagai CEO & COO Kumpulan Pendidikan Character" },
+      { "value": "4", "label": "Cawangan di Johor dan Negeri Sembilan" }
+    ]
+  },
+  "about": {
+    "eyebrow": "Tentang akademi",
+    "title": "Institusi TVET Malaysia yang dibina oleh orang yang menguruskan perniagaan.",
+    "statBig": "20+ tahun",
+    "statSmall": "pengalaman latihan",
+    "p1Before": "Character International Academy Sdn. Bhd. (",
+    "p1After": ") ialah institusi TVET profesional dan perunding pembangunan sistem korporat yang berdedikasi kepada pensijilan kemahiran kebangsaan dan transformasi tenaga kerja berstruktur. Fokus kami adalah memupuk profesional yang berkemahiran tinggi dengan kepakaran teknikal yang relevan dengan industri dan nilai profesional yang kukuh.",
+    "p2": "Kami merapatkan keperluan industri dengan rangka kerja kemahiran kebangsaan yang berstruktur. Melalui penglibatan industri yang aktif, kami telah membina kerjasama strategik dengan syarikat pelbagai sektor untuk menyampaikan program latihan dan peluang perantisan dipandu industri — yang sepadan dengan permintaan sebenar, bukan risalah pemasaran.",
+    "p3": "Pengasas kami melihat corak yang sama dalam setiap perniagaan yang beliau jalankan: organisasi bergantung kepada ingatan dan naluri kakitangan lama dan bukannya sistem yang didokumenkan dan boleh diajar. Character Academy ditubuhkan untuk memperbaiki keadaan itu — untuk membawa latihan berasaskan kompetensi ke tempat kerja di Malaysia dan mengikatnya kepada sijil yang diiktiraf oleh negara, supaya kerja berkemahiran menjadi kerjaya, bukan tekaan."
+  },
+  "vision": {
+    "eyebrow": "Visi & Misi",
+    "title": "Ke mana kami menuju, dan apa yang kami lakukan setiap minggu untuk ke sana.",
+    "visionLabel": "Visi",
+    "visionTitle": "Menjadi peneraju utama dalam ekosistem TVET Malaysia — di mana pendidikan dipandu industri dan pembangunan kemahiran berstruktur memperkasakan pertumbuhan tenaga kerja yang mampan.",
+    "visionBody": "Kami mencapai ini melalui kerjasama industri yang berterusan, latihan berasaskan kompetensi, dan laluan pensijilan yang diiktiraf oleh negara.",
+    "missionLabel": "Misi",
+    "missionPoints": [
+      "Menyediakan latihan berstruktur berasaskan kompetensi yang selaras dengan keperluan industri.",
+      "Menyokong pembangunan tenaga kerja melalui laluan kemahiran yang sistematik.",
+      "Mempromosikan pensijilan kemahiran kebangsaan (SKM · DKM · DLKM).",
+      "Membangunkan jurulatih, penilai dan pengamal industri yang kompeten.",
+      "Mengukuhkan kerjasama antara industri dan institusi latihan."
+    ]
+  },
+  "how": {
+    "eyebrow": "Cara kami bekerja",
+    "title": "Enam langkah tulang belakang. Setiap tugasan. Tiada jalan pintas.",
+    "lead": "Keperluan → Piawaian → Program → Pelaksanaan → Pensijilan → Kemampanan. Melangkau satu langkah adalah bagaimana latihan menjadi tidak sesuai dengan pekerjaan.",
+    "steps": [
+      {
+        "title": "Analisis Keperluan Industri & Organisasi",
+        "body": "Kami mula di lapangan. Apakah yang sebenarnya diperlukan oleh industri? Apakah yang tidak betul di dalam organisasi khusus ini — jurang kemampuan, masalah pengekalan, sistem latihan yang tidak konsisten? Matlamatnya adalah untuk sepadankan apa yang kami bina dengan keperluan operasi sebenar, bukan risalah."
+      },
+      {
+        "title": "Penjajaran Piawaian",
+        "body": "Kami memetakan keperluan itu kepada Standard Kemahiran Pekerjaan Kebangsaan (NOSS) dan rangka kerja pensijilan kebangsaan (SKM · DKM · DLKM). Ini mengubah pelan latihan tersuai menjadi pelan yang diiktiraf oleh negara."
+      },
+      {
+        "title": "Reka Bentuk Program",
+        "body": "Kami mereka bentuk laluan latihan berasaskan kompetensi — modular, sesuai tahap, boleh dinilai — supaya setiap pelajar dapat menunjukkan apa yang boleh mereka lakukan, bukan hanya apa yang diajar kepada mereka."
+      },
+      {
+        "title": "Pelaksanaan",
+        "body": "Kami melaksanakan. Pembelajaran bilik darjah disepadukan dengan amalan di tempat kerja — dan, di mana bersesuaian, dengan model perantisan ADI-Perantisan (70–80% latihan di tapak majikan)."
+      },
+      {
+        "title": "Pensijilan",
+        "body": "Kami memudahkan penilaian kompetensi formal. Pelajar yang berjaya pulang dengan SKM, DKM atau DLKM yang dikeluarkan oleh JPK di bawah Kementerian Sumber Manusia."
+      },
+      {
+        "title": "Penambahbaikan Berterusan",
+        "body": "Kami terus bersama organisasi selepas sijil dikeluarkan — memperhalus sistem latihan, mengemas kini matriks, menjejak pengekalan, merancang gelombang pensijilan seterusnya. Pembangunan kemahiran ialah sistem, bukan acara sekali."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Perkhidmatan kami",
+    "title": "Dua jenis orang datang kepada kami. Kami bina satu barisan perkhidmatan untuk setiap mereka.",
+    "corporateTitle": "Untuk organisasi",
+    "corporateIntro": "Perkhidmatan perundingan dan pelaksanaan berstruktur untuk membina sistem pembangunan tenaga kerja yang mampan.",
+    "corporate": [
+      { "title": "Program Latihan Kemahiran TVET", "body": "Program tersuai berasaskan kompetensi yang dipetakan kepada NOSS dan rangka kerja SKM/DKM/DLKM." },
+      { "title": "Perantisan ADI-Perantisan", "body": "Penubuhan program perantisan menyeluruh di bawah Sistem Latihan Dual Kebangsaan." },
+      { "title": "Perundingan Pusat Bertauliah", "body": "Mencapai dan mengekalkan pengiktirafan Pusat Bertauliah bersama JPK." },
+      { "title": "Program Pembangunan Tenaga Kerja", "body": "Peta jalan kemahiran seluruh organisasi, matriks kompetensi dan saluran pensijilan." },
+      { "title": "Pelaksanaan Berasaskan Kompetensi", "body": "Perundingan praktikal semasa pelaksanaan — bukan sekadar pelan di atas kertas." },
+      { "title": "Perancangan Pengekalan Bakat", "body": "Menghubungkan pensijilan dan kemajuan kerjaya terus dengan hasil pengekalan." },
+      { "title": "Perundingan Pertumbuhan Korporat", "body": "Gunakan strategi bakat sebagai tuil pertumbuhan perniagaan, bukan sekadar HR." },
+      { "title": "Latihan Tuntutan HRD Corp", "body": "Latihan yang majikan boleh tuntut semula di bawah skim levi HRD Corp." }
+    ],
+    "individualTitle": "Untuk individu",
+    "individualIntro": "Laluan untuk profesional membina kelayakan yang diiktiraf dan memajukan kerjaya mereka.",
+    "individual": [
+      { "title": "Perundingan Peningkatan Kemahiran", "body": "Diagnosis jurang kemahiran dan petakan laluan pantas yang boleh dipercayai." },
+      { "title": "Panduan Laluan Pensijilan", "body": "Pilih tahap SKM / DKM / DLKM yang betul dan laluan paling praktikal — latihan, ADI, atau PPT (pembelajaran terdahulu)." },
+      { "title": "Panduan Peningkatan Kompetensi", "body": "Perundingan satu-satu sambil anda bergerak ke arah penilaian." },
+      { "title": "Perundingan Pengiktirafan JPK", "body": "Panduan untuk profesional yang ingin menjadi penilai, pengesah (PPL), atau pakar industri." },
+      { "title": "Pengiktirafan Jurulatih HRD Corp", "body": "Lulus program TTT 5 hari dan proses pengiktirafan 120 jam." }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Projek",
+    "title": "Tiga inisiatif yang menunjukkan bagaimana pendekatan ini bertahan dalam praktik.",
+    "projectLabel": "Projek",
+    "items": [
+      {
+        "tag": "Perantisan",
+        "title": "Pembangunan Perantisan Berasaskan Industri",
+        "metric": "80+ syarikat",
+        "body": "Kami bekerjasama dengan lebih lapan puluh majikan untuk menubuhkan program perantisan berasaskan industri yang selaras dengan agenda TVET kebangsaan Malaysia. Pembelajaran di tempat kerja dijalin bersama latihan bilik darjah berasaskan kompetensi, supaya perantis membangunkan kemahiran dan konteks pada masa yang sama.",
+        "outcomes": [
+          "Keupayaan tenaga kerja yang lebih kukuh dan dapat diukur",
+          "Sistem pembangunan bakat berstruktur yang boleh diulang",
+          "Konsistensi operasi yang lebih ketat antara pasukan"
+        ]
+      },
+      {
+        "tag": "Pensijilan Kebangsaan",
+        "title": "Laluan Pensijilan Kemahiran Kebangsaan",
+        "metric": "4,500+ pelajar",
+        "body": "Inisiatif terbesar dan paling lama berjalan di Character Academy: membantu pekerja berpengalaman memperoleh pengiktirafan formal terhadap apa yang mereka sudah tahu cara lakukan. Melalui laluan berstruktur — termasuk Pengiktirafan Pencapaian Terdahulu (PPT) — pekerja pelbagai sektor memperoleh sijil SKM / DKM / DLKM yang diiktiraf oleh negara.",
+        "outcomes": [
+          "Peningkatan kebolehpasaran dan mobiliti ke atas",
+          "Kelayakan yang sepadan dengan kecekapan sebenar di tempat kerja",
+          "Pertumbuhan tenaga kerja mahir bersijil Malaysia"
+        ]
+      },
+      {
+        "tag": "Pengekalan",
+        "title": "Pembangunan Tenaga Kerja Korporat & Pengekalan Bakat",
+        "metric": "Kurang berhenti. Lebih pertumbuhan.",
+        "body": "Kami membantu syarikat mereka bentuk dan melaksanakan sistem pengekalan bakat yang lengkap — bukan sekadar latihan, tetapi semua tisu penyambung di sekitarnya: pemetaan kompetensi, pembangunan matriks latihan, dan perancangan laluan kerjaya berasaskan pensijilan.",
+        "outcomes": [
+          "Keupayaan pekerja yang lebih tinggi secara menyeluruh",
+          "Konsistensi latihan yang lebih tinggi antara pasukan dan cawangan",
+          "Penurunan pusing ganti yang boleh diukur"
+        ]
+      }
+    ]
+  },
+  "leadership": {
+    "eyebrow": "Kepimpinan",
+    "title": "Dua dekad kerja JPK, diterajui oleh pengamal industri.",
+    "jennifer": {
+      "role": "Ketua Kumpulan · Pengasas",
+      "name": "Jennifer Tan",
+      "bio": "Pengasas Character International Academy. Tiga puluh tahun dalam pengurusan korporat dan dua dekad menjalankan kerja latihan bertauliah JPK — dengan rekod yang telah berulang kali dirujuk oleh Jabatan Pembangunan Kemahiran sebagai suara awam untuk TVET Malaysia.",
+      "timeline": [
+        { "years": "30 tahun", "role": "dalam Pengurusan Korporat" },
+        { "years": "24 tahun", "role": "sebagai CEO & COO Kumpulan Pendidikan Character" },
+        { "years": "20 tahun", "role": "sebagai Pengarah Urusan, Kumpulan Syarikat Rangkaian True Harmony" },
+        { "years": "17 tahun", "role": "dilantik JPK sebagai Pakar Industri (Country Industry Expert)" },
+        { "years": "12 tahun", "role": "dilantik JPK sebagai Pegawai Pengesah Luaran (PPL)" },
+        { "years": "10 tahun", "role": "diiktiraf JPK sebagai Panel Hakim (Panel of Judges)" },
+        { "years": "5 tahun", "role": "Jurulatih Bertauliah HRD Corp (TTT)" }
+      ],
+      "guestLabel": "Penceramah jemputan",
+      "guest": [
+        { "year": "2022", "note": "Penceramah Kisah Kejayaan — seminar JPK \"Institutionalise The Enterprise\"" },
+        { "year": "2023", "note": "Penceramah Kisah Kejayaan — JPK \"Advisory Service Program with Entrepreneurs\"" }
+      ]
+    },
+    "others": [
+      {
+        "name": "SeaQin Teo",
+        "role": "Ketua Pasukan",
+        "body": "Membimbing dan memperkasakan pasukan latihan dan perundingan akademi. Kepimpinan harian, kerjasama antara pasukan, pengurusan prestasi, dan gelung penambahbaikan berterusan yang memastikan program kami selaras dengan piawaian JPK dan hasil pelanggan."
+      },
+      {
+        "name": "May Liau",
+        "role": "Pengurus Kawasan",
+        "body": "Mengawasi operasi dan prestasi di keempat-empat cawangan kami. Memastikan kualiti latihan, piawaian operasi, dan penyampaian perkhidmatan konsisten daripada Ibu Pejabat Muar hingga Johor Bahru, Kluang dan Seremban — dan memastikan setiap cawangan selaras dengan latihan berasaskan kompetensi dan piawaian pensijilan kebangsaan."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Kisah pelanggan",
+    "title": "Testimoni penuh, seperti ditulis. Tidak dipotong.",
+    "corporateLabel": "Korporat",
+    "individualLabel": "Individu",
+    "originalLanguageNote": "Testimoni asal dalam bahasa Inggeris.",
+    "corporate": [
+      { "name": "Karen Tang", "role": "Rakan Industri · Sektor Pembangunan Kemahiran" },
+      { "name": "Mr. Tan", "role": "CEO, Kumpulan Cottonrose · Pengasas, Supreme Automotive Academy Sdn Bhd" }
+    ],
+    "individual": [
+      { "name": "Min Yew", "role": "Pakar Hypnotherapy Profesional" },
+      { "name": "Dato' Huang", "role": "Pengamal Perubatan Tradisional Cina" }
+    ]
+  },
+  "plan": {
+    "eyebrow": "Pelan perniagaan",
+    "title": "Tiga pelan. Satu hala tuju.",
+    "lead": "Menjadikan pembangunan kemahiran berstruktur lebih mudah diakses, lebih khusus, dan lebih terhubung dengan antarabangsa.",
+    "items": [
+      {
+        "badge": "Berterusan",
+        "title": "Ekosistem TVET Digital & Pembelajaran Hibrid",
+        "body": "Lapisan pembelajaran hibrid yang menggabungkan bengkel fizikal dan latihan di tapak dengan sokongan dalam talian yang berstruktur. Dalam talian mengendalikan kerja awal, bahan rujukan, penjejakan kemajuan dan bimbingan jarak jauh; fizikal mengendalikan amalan praktikal dan penilaian.",
+        "bullets": [
+          "Skala — jangkauan serantau tanpa mengorbankan integriti penilaian",
+          "Kebolehcapaian — profesional yang bekerja terus maju tanpa meninggalkan pekerjaan mereka",
+          "Kesinambungan — pembangunan kompetensi tidak berhenti apabila bilik darjah kosong"
+        ]
+      },
+      {
+        "badge": "Seterusnya",
+        "title": "Pusat Kecemerlangan Serantau",
+        "body": "Pusat Kecemerlangan khusus yang memberi tumpuan kepada sektor industri utama — bertindak sebagai hab untuk pembangunan kemahiran lanjutan (DKM Tahap 4, DLKM Tahap 5, trek pakar), pembinaan keupayaan jurulatih, dan kerjasama industri peringkat sektor.",
+        "bullets": [
+          "Hab untuk pembangunan kemahiran DKM / DLKM lanjutan",
+          "Pembinaan keupayaan jurulatih untuk jurulatih bertauliah HRD Corp dan penilai JPK",
+          "Kerjasama industri peringkat sektor, bukan sekadar peringkat syarikat"
+        ]
+      },
+      {
+        "badge": "Ufuk",
+        "title": "Kerjasama Antarabangsa & Mobiliti Bakat",
+        "body": "Kerjasama dengan institusi latihan antarabangsa dan organisasi industri untuk membolehkan pertukaran pengetahuan, meningkatkan piawaian kompetensi, dan membuka peluang rentas sempadan untuk profesional bersijil.",
+        "bullets": [
+          "Pertukaran pengetahuan dan penanda aras terhadap amalan terbaik antarabangsa",
+          "Meningkatkan piawaian kompetensi Malaysia ke tahap antarabangsa",
+          "Peluang rentas sempadan yang berkaitan dengan agenda Tahun Kemahiran ASEAN"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Mari berbual",
+    "title": "Hubungi Jennifer secara terus.",
+    "body": "Sama ada anda sedang membina sistem pembangunan tenaga kerja dari awal, membawa pasukan ke pensijilan SKM / DKM / DLKM, atau meneroka latihan tuntutan HRD Corp — panggilan telefon 20 minit biasanya cukup untuk kedua-dua pihak menilai kesesuaian.",
+    "whatsappLabel": "WhatsApp · diutamakan",
+    "emailLabel": "E-mel",
+    "facebookLabel": "Facebook",
+    "branchesLabel": "Cawangan kami",
+    "headquartersBadge": "Ibu Pejabat",
+    "branchBadge": "Cawangan",
+    "branches": [
+      { "label": "Ibu Pejabat Muar", "note": "Pejabat utama · pusat latihan bertauliah" },
+      { "label": "Johor Bahru", "note": "Menyediakan perkhidmatan kawasan metropolitan JB · koridor perindustrian selatan" },
+      { "label": "Kluang", "note": "Menyediakan perkhidmatan untuk Johor tengah" },
+      { "label": "Seremban", "note": "Memperluaskan jejak kami ke Negeri Sembilan" }
+    ]
+  },
+  "footer": {
+    "brandLine1": "Character International Academy Sdn. Bhd.",
+    "brandLine3": "Institusi TVET bertauliah JPK yang berpangkalan di Muar, Johor — berkhidmat untuk agenda pembangunan tenaga kerja Malaysia selama lebih dua dekad.",
+    "quickLinks": "Pautan pantas",
+    "contact": "Hubungi",
+    "hq": "Ibu Pejabat: No. 82, Jalan Ali, 84000 Muar, Johor",
+    "rights": "Hak cipta terpelihara.",
+    "copyright": "© {year} Character International Academy Sdn. Bhd."
+  }
+}

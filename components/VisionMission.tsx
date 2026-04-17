@@ -1,6 +1,10 @@
+import { useTranslations } from 'next-intl';
 import { SectionHeading } from './SectionHeading';
 
 export function VisionMission() {
+  const t = useTranslations('vision');
+  const missionPoints = t.raw('missionPoints') as string[];
+
   return (
     <section id="vision" className="relative bg-sand/50 py-20 md:py-28">
       {/* Top ornamental divider */}
@@ -10,8 +14,8 @@ export function VisionMission() {
       />
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          eyebrow="Vision & Mission"
-          title="Where we're going, and what we do each week to get there."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
         />
 
         <div className="mt-14 grid gap-10 md:grid-cols-[1.1fr_1fr] md:gap-16">
@@ -21,30 +25,22 @@ export function VisionMission() {
               className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-gold via-gold-light to-gold-dark"
             />
             <p className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.24em] text-gold-dark">
-              <span className="rule-gold" aria-hidden /> Vision
+              <span className="rule-gold" aria-hidden /> {t('visionLabel')}
             </p>
             <h3 className="mt-4 font-display text-2xl leading-snug tracking-display text-navy md:text-[1.7rem]">
-              Become a leading force in Malaysia's TVET ecosystem — one where industry-driven
-              education and structured skills development empower sustainable workforce growth.
+              {t('visionTitle')}
             </h3>
             <p className="mt-5 text-slate-600">
-              We pursue this through continuous industry collaboration, competency-based training,
-              and nationally recognised certification pathways.
+              {t('visionBody')}
             </p>
           </div>
 
           <div className="reveal">
             <p className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.24em] text-gold-dark">
-              <span className="rule-gold" aria-hidden /> Mission
+              <span className="rule-gold" aria-hidden /> {t('missionLabel')}
             </p>
             <ul className="mt-5 space-y-4">
-              {[
-                'Provide structured, competency-based training aligned with industry needs.',
-                'Support workforce development through systematic skills pathways.',
-                'Promote national skills certification (SKM · DKM · DLKM).',
-                'Develop competent trainers, assessors, and industry practitioners.',
-                'Strengthen collaboration between industry and training institutions.',
-              ].map((m, i) => (
+              {missionPoints.map((m, i) => (
                 <li
                   key={m}
                   className="group flex gap-4 rounded-md px-2 py-2 transition-colors hover:bg-white"

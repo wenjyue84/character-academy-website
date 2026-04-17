@@ -1,3 +1,5 @@
+import { getTranslations } from 'next-intl/server';
+
 const SITE = 'https://character-academy.vercel.app';
 
 const organization = {
@@ -205,22 +207,37 @@ const website = {
   inLanguage: ['en-MY', 'ms-MY', 'zh-Hans-MY'],
 };
 
-const webpage = {
-  '@type': 'WebPage',
-  '@id': `${SITE}/#webpage`,
-  url: SITE,
-  name: 'Character International Academy — TVET & National Skills Certification in Malaysia',
-  isPartOf: { '@id': `${SITE}/#website` },
-  about: { '@id': `${SITE}/#organization` },
-  primaryImageOfPage: `${SITE}/images/hero/cover.jpg`,
-  inLanguage: 'en-MY',
-  speakable: {
-    '@type': 'SpeakableSpecification',
-    cssSelector: ['#about', '#services', '#how'],
-  },
-};
+function htmlLang(locale: string) {
+  if (locale === 'ms') return 'ms-MY';
+  if (locale === 'zh') return 'zh-Hans-MY';
+  return 'en-MY';
+}
 
-export function OrganizationJsonLd() {
+function localeUrl(locale: string) {
+  if (locale === 'en') return SITE;
+  return `${SITE}/${locale}`;
+}
+
+export async function OrganizationJsonLd({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale, namespace: 'meta' });
+  const pageUrl = localeUrl(locale);
+
+  const webpage = {
+    '@type': 'WebPage',
+    '@id': `${pageUrl}/#webpage`,
+    url: pageUrl,
+    name: t('title'),
+    description: t('description'),
+    isPartOf: { '@id': `${SITE}/#website` },
+    about: { '@id': `${SITE}/#organization` },
+    primaryImageOfPage: `${SITE}/images/hero/cover.jpg`,
+    inLanguage: htmlLang(locale),
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['#about', '#services', '#how'],
+    },
+  };
+
   const graph = {
     '@context': 'https://schema.org',
     '@graph': [organization, jenniferTan, website, webpage],

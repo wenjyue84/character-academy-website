@@ -1,49 +1,24 @@
+import { useTranslations } from 'next-intl';
 import { SectionHeading } from './SectionHeading';
 
-const plans = [
-  {
-    badge: 'Ongoing',
-    title: 'Digital TVET & Hybrid Learning Ecosystem',
-    body:
-      "A hybrid learning layer that combines physical workshops and on-site training with structured online support. Online handles pre-work, reference material, progress tracking, and remote coaching; physical handles hands-on practice and assessment.",
-    bullets: [
-      'Scale — regional reach without sacrificing assessment integrity',
-      'Accessibility — working professionals progress without stepping away from their jobs',
-      'Continuity — competency development does not stop when the classroom empties',
-    ],
-  },
-  {
-    badge: 'Next',
-    title: 'Regional Centres of Excellence',
-    body:
-      'Specialised Centres of Excellence focused on key industry sectors — acting as hubs for advanced skills development (DKM Level 4, DLKM Level 5, specialist tracks), trainer capacity-building, and sector-level industry collaboration.',
-    bullets: [
-      'Hubs for advanced DKM / DLKM skills development',
-      'Trainer capacity-building for HRD Corp accredited trainers and JPK assessors',
-      'Sector-level industry collaboration, not just company-level',
-    ],
-  },
-  {
-    badge: 'Horizon',
-    title: 'International Collaboration & Talent Mobility',
-    body:
-      'Partnerships with international training institutions and industry organisations to enable knowledge exchange, raise competency standards, and open cross-border opportunities for certified professionals.',
-    bullets: [
-      'Knowledge exchange and benchmarking against international best practice',
-      'Raise Malaysian competency standards toward international levels',
-      "Cross-border opportunities tied to the ASEAN Year of Skills agenda",
-    ],
-  },
-];
+type PlanItem = {
+  badge: string;
+  title: string;
+  body: string;
+  bullets: string[];
+};
 
 export function BusinessPlan() {
+  const t = useTranslations('plan');
+  const plans = t.raw('items') as PlanItem[];
+
   return (
     <section id="plan" className="bg-sand/50 py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          eyebrow="Business plan"
-          title="Three plans. One direction."
-          lead="Make structured skills development more accessible, more specialised, and more internationally connected."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          lead={t('lead')}
         />
 
         <div className="reveal-stagger mt-14 grid gap-6 md:grid-cols-3">

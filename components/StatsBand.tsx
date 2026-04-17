@@ -1,11 +1,9 @@
-const stats = [
-  { value: '4,500+', label: 'Learners certified under SKM · DKM · DLKM' },
-  { value: '80+', label: 'Corporate partners in apprenticeship programmes' },
-  { value: '24 yrs', label: 'As CEO & COO of Character Education Group' },
-  { value: '4', label: 'Branches across Johor and Negeri Sembilan' },
-];
+import { useTranslations } from 'next-intl';
 
 export function StatsBand() {
+  const t = useTranslations('stats');
+  const stats = t.raw('items') as { value: string; label: string }[];
+
   return (
     <section className="relative overflow-hidden border-y border-navy-dark/40 bg-navy text-cream">
       {/* Subtle grain for depth */}

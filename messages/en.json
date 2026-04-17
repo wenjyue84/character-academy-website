@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Character International Academy — TVET & National Skills Certification in Malaysia",
+    "titleTemplate": "%s · Character International Academy",
+    "description": "A JPK-accredited Malaysian TVET institution helping 4,500+ learners earn SKM/DKM/DLKM certification and 80+ companies build structured workforce development. Founded 2002 · HQ Muar, Johor.",
+    "ogDescription": "20+ years of structured, competency-based TVET training across Muar, Johor Bahru, Kluang and Seremban. JPK-accredited · SKM · DKM · DLKM · ADI-Perantisan · HRD Corp claimable.",
+    "twitterDescription": "JPK-accredited Malaysian TVET · SKM / DKM / DLKM · ADI-Perantisan · HRD Corp claimable training. Since 2002.",
+    "skipToMain": "Skip to main content"
+  },
+  "nav": {
+    "brand": "Character Academy",
+    "brandTagline": "International · Since 2002",
+    "brandAria": "Character International Academy — back to top",
+    "about": "About",
+    "how": "How we work",
+    "services": "Services",
+    "projects": "Projects",
+    "team": "Team",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "language": {
+    "label": "Language",
+    "en": "EN",
+    "ms": "BM",
+    "zh": "中文"
+  },
+  "hero": {
+    "badge": "JPK-accredited · since 2002",
+    "headlineLine1": "Structured skills.",
+    "headlineAccent": "Recognised",
+    "headlineLine2": " by the nation.",
+    "leadPrefix": "Character International Academy is a Malaysian TVET institution and corporate workforce-development consultancy. For more than two decades we've helped over ",
+    "leadLearners": "4,500 learners",
+    "leadMid": " earn SKM, DKM and DLKM certification, and worked with ",
+    "leadCompanies": "80+ companies",
+    "leadSuffix": " to build training systems that actually stay in place.",
+    "ctaPrimary": "Talk to Jennifer",
+    "ctaSecondary": "See our services",
+    "locations": "HQ No. 82, Jalan Ali, Muar · Branches in Johor Bahru, Kluang & Seremban",
+    "quote": "Adapting to and embracing change is key to long-term success.",
+    "quoteAttribution": "Jennifer Tan — Founder"
+  },
+  "stats": {
+    "items": [
+      { "value": "4,500+", "label": "Learners certified under SKM · DKM · DLKM" },
+      { "value": "80+", "label": "Corporate partners in apprenticeship programmes" },
+      { "value": "24 yrs", "label": "As CEO & COO of Character Education Group" },
+      { "value": "4", "label": "Branches across Johor and Negeri Sembilan" }
+    ]
+  },
+  "about": {
+    "eyebrow": "About the academy",
+    "title": "A Malaysian TVET institution built by people who run businesses.",
+    "statBig": "20+ years",
+    "statSmall": "of training experience",
+    "p1Before": "Character International Academy Sdn. Bhd. (",
+    "p1After": ") is a professional TVET institution and corporate system development consultancy dedicated to national skills certification and structured workforce transformation. Our focus is nurturing highly competent professionals with industry-relevant technical expertise and strong professional values.",
+    "p2": "We bridge industry needs with structured national skills frameworks. Through active industry engagement, we've built strategic partnerships with companies across multiple sectors to deliver industry-driven training programmes and apprenticeship opportunities that match real workforce demand — not marketing brochures.",
+    "p3": "Our founder saw the same pattern in every business she ran: organisations leaning on the memory and instinct of long-serving staff instead of on documented, teachable systems. Character Academy was set up to fix that — to bring competency-based training into Malaysian workplaces and tie it to a nationally recognised certificate, so that skilled work becomes a career, not a guess."
+  },
+  "vision": {
+    "eyebrow": "Vision & Mission",
+    "title": "Where we're going, and what we do each week to get there.",
+    "visionLabel": "Vision",
+    "visionTitle": "Become a leading force in Malaysia's TVET ecosystem — one where industry-driven education and structured skills development empower sustainable workforce growth.",
+    "visionBody": "We pursue this through continuous industry collaboration, competency-based training, and nationally recognised certification pathways.",
+    "missionLabel": "Mission",
+    "missionPoints": [
+      "Provide structured, competency-based training aligned with industry needs.",
+      "Support workforce development through systematic skills pathways.",
+      "Promote national skills certification (SKM · DKM · DLKM).",
+      "Develop competent trainers, assessors, and industry practitioners.",
+      "Strengthen collaboration between industry and training institutions."
+    ]
+  },
+  "how": {
+    "eyebrow": "How we work",
+    "title": "A six-step backbone. Every engagement. No shortcuts.",
+    "lead": "Needs → Standards → Programme → Implementation → Certification → Sustainability. Skipping a step is how training ends up not fitting the job.",
+    "steps": [
+      {
+        "title": "Industry & Organisational Needs Analysis",
+        "body": "We start on the ground. What does the industry actually demand? What's broken inside this specific organisation — a capability gap, a retention problem, an inconsistent training system? The goal is to match what we build next to real operational needs, not to a brochure."
+      },
+      {
+        "title": "Standards Alignment",
+        "body": "We map those needs to the National Occupational Skills Standard (NOSS) and the national certification framework (SKM · DKM · DLKM). This turns a custom training plan into a nationally recognised one."
+      },
+      {
+        "title": "Programme Design",
+        "body": "We design competency-based training pathways — modular, level-appropriate, assessable — so that every learner can demonstrate what they can do, not just what they were taught."
+      },
+      {
+        "title": "Implementation",
+        "body": "We deliver. Classroom learning is integrated with workplace practice — and, where it fits, with the ADI-Perantisan apprenticeship model (70–80% of the training at the employer's site)."
+      },
+      {
+        "title": "Certification",
+        "body": "We facilitate the formal competency assessment. Successful learners leave with an SKM, DKM, or DLKM issued by JPK under the Ministry of Human Resources."
+      },
+      {
+        "title": "Continuous Improvement",
+        "body": "We stay with the organisation after the certificate is issued — refining the training system, updating matrices, tracking retention, planning the next certification wave. Skills development is a system, not an event."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "title": "Two kinds of people come to us. We built a service line for each.",
+    "corporateTitle": "For organisations",
+    "corporateIntro": "Structured advisory and implementation services to build sustainable workforce development systems.",
+    "corporate": [
+      { "title": "TVET Skills Training Programmes", "body": "Custom competency-based programmes mapped to NOSS and the SKM/DKM/DLKM framework." },
+      { "title": "ADI-Perantisan Apprenticeship", "body": "End-to-end setup of apprenticeship programmes under the National Dual Training System." },
+      { "title": "Accredited Training Centre Advisory", "body": "Achieve and maintain Pusat Bertauliah accreditation with JPK." },
+      { "title": "Workforce Development Programmes", "body": "Organisation-wide skills roadmaps, competency matrices, and certification pipelines." },
+      { "title": "Competency-Based Implementation", "body": "Hands-on advisory during rollout — not just a plan on paper." },
+      { "title": "Talent Retention Planning", "body": "Link certification and career progression directly to retention outcomes." },
+      { "title": "Corporate Growth Advisory", "body": "Use talent strategy as a lever for business growth, not an HR afterthought." },
+      { "title": "HRD Corp Claimable Training", "body": "Training that employers can claim back under the HRD Corp levy scheme." }
+    ],
+    "individualTitle": "For individuals",
+    "individualIntro": "Pathways for professionals to build recognised credentials and move their career forward.",
+    "individual": [
+      { "title": "Upskilling Advisory", "body": "Diagnose the skill gap and map the fastest credible path forward." },
+      { "title": "Certification Pathways Guidance", "body": "Pick the right SKM / DKM / DLKM level and the most practical route — training, ADI, or PPT (prior learning)." },
+      { "title": "Competency Enhancement Guidance", "body": "One-on-one advisory while you work toward assessment." },
+      { "title": "JPK Accreditation Advisory", "body": "Guidance for professionals who want to become assessors, verifiers (PPL), or industry experts." },
+      { "title": "HRD Corp Trainer Accreditation", "body": "Pass the 5-day TTT programme and the 120-hour accreditation process." }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Three initiatives that show how the approach holds up in practice.",
+    "projectLabel": "Project",
+    "items": [
+      {
+        "tag": "Apprenticeship",
+        "title": "Industry-Based Apprenticeship Development",
+        "metric": "80+ companies",
+        "body": "We partnered with more than eighty employers to stand up industry-based apprenticeship programmes aligned with Malaysia's national TVET agenda. Workplace learning was woven together with competency-based classroom training, so apprentices developed skill and context at the same time.",
+        "outcomes": [
+          "Measurably stronger workforce capability",
+          "Repeatable structured talent-development system",
+          "Tighter operational consistency across teams"
+        ]
+      },
+      {
+        "tag": "National Certification",
+        "title": "National Skills Certification Pathway",
+        "metric": "4,500+ learners",
+        "body": "Character Academy's largest and longest-running initiative: helping experienced workers obtain formal recognition of what they already know how to do. Through structured pathways — including Recognition of Prior Achievement (PPT) — workers across multiple sectors earned nationally recognised SKM / DKM / DLKM certificates.",
+        "outcomes": [
+          "Improved employability and upward mobility",
+          "Credentials that match existing on-the-job competence",
+          "Growth of Malaysia's certified-skilled workforce"
+        ]
+      },
+      {
+        "tag": "Retention",
+        "title": "Corporate Workforce Development & Talent Retention",
+        "metric": "Fewer quits. More growth.",
+        "body": "We helped companies design and implement full talent retention systems — not just training, but the connective tissue around it: competency mapping, training-matrix development, and certification-based career-progression planning.",
+        "outcomes": [
+          "Higher employee capability across the board",
+          "Greater training consistency between teams and branches",
+          "Measurably reduced turnover"
+        ]
+      }
+    ]
+  },
+  "leadership": {
+    "eyebrow": "Leadership",
+    "title": "Two decades of JPK work, led by an industry practitioner.",
+    "jennifer": {
+      "role": "Group Leader · Founder",
+      "name": "Jennifer Tan",
+      "bio": "Founder of Character International Academy. Thirty years in corporate management and two decades running JPK-accredited training work — with a track record that the Department of Skills Development has repeatedly drawn on as a public voice for Malaysian TVET.",
+      "timeline": [
+        { "years": "30 years", "role": "in Corporate Management" },
+        { "years": "24 years", "role": "as CEO & COO of Character Education Group of Academy" },
+        { "years": "20 years", "role": "as Managing Director, True Harmony Group of Chain Company" },
+        { "years": "17 years", "role": "appointed by JPK as Country Industry Expert (Pakar Industri)" },
+        { "years": "12 years", "role": "appointed by JPK as External Verification Officer (PPL)" },
+        { "years": "10 years", "role": "accredited by JPK as Panel of Judges (Panel Hakim)" },
+        { "years": "5 years", "role": "HRD Corp Accredited Train-the-Trainer (TTT)" }
+      ],
+      "guestLabel": "Invited speaker",
+      "guest": [
+        { "year": "2022", "note": "Success Story Speaker — JPK \"Institutionalise The Enterprise\" seminar" },
+        { "year": "2023", "note": "Success Story Speaker — JPK \"Advisory Service Program with Entrepreneurs\"" }
+      ]
+    },
+    "others": [
+      {
+        "name": "SeaQin Teo",
+        "role": "Team Leader",
+        "body": "Guides and empowers the academy's training and advisory teams. Day-to-day leadership, cross-team collaboration, performance management, and the continuous improvement loop that keeps our programmes aligned with JPK standards and client outcomes."
+      },
+      {
+        "name": "May Liau",
+        "role": "Area Manager",
+        "body": "Oversees operations and performance across our four branches. Keeps training quality, operational standards, and service delivery consistent from Muar HQ through Johor Bahru, Kluang and Seremban — and keeps every branch aligned with competency-based training and national certification standards."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client stories",
+    "title": "Full testimonials, as written. Trimmed for nothing.",
+    "corporateLabel": "Corporate",
+    "individualLabel": "Individual",
+    "originalLanguageNote": "",
+    "corporate": [
+      { "name": "Karen Tang", "role": "Industry Partner · Skills Development Sector" },
+      { "name": "Mr. Tan", "role": "CEO, Cottonrose Group · Founder, Supreme Automotive Academy Sdn Bhd" }
+    ],
+    "individual": [
+      { "name": "Min Yew", "role": "Professional Hypnotherapist" },
+      { "name": "Dato' Huang", "role": "Traditional Chinese Medicine Practitioner" }
+    ]
+  },
+  "plan": {
+    "eyebrow": "Business plan",
+    "title": "Three plans. One direction.",
+    "lead": "Make structured skills development more accessible, more specialised, and more internationally connected.",
+    "items": [
+      {
+        "badge": "Ongoing",
+        "title": "Digital TVET & Hybrid Learning Ecosystem",
+        "body": "A hybrid learning layer that combines physical workshops and on-site training with structured online support. Online handles pre-work, reference material, progress tracking, and remote coaching; physical handles hands-on practice and assessment.",
+        "bullets": [
+          "Scale — regional reach without sacrificing assessment integrity",
+          "Accessibility — working professionals progress without stepping away from their jobs",
+          "Continuity — competency development does not stop when the classroom empties"
+        ]
+      },
+      {
+        "badge": "Next",
+        "title": "Regional Centres of Excellence",
+        "body": "Specialised Centres of Excellence focused on key industry sectors — acting as hubs for advanced skills development (DKM Level 4, DLKM Level 5, specialist tracks), trainer capacity-building, and sector-level industry collaboration.",
+        "bullets": [
+          "Hubs for advanced DKM / DLKM skills development",
+          "Trainer capacity-building for HRD Corp accredited trainers and JPK assessors",
+          "Sector-level industry collaboration, not just company-level"
+        ]
+      },
+      {
+        "badge": "Horizon",
+        "title": "International Collaboration & Talent Mobility",
+        "body": "Partnerships with international training institutions and industry organisations to enable knowledge exchange, raise competency standards, and open cross-border opportunities for certified professionals.",
+        "bullets": [
+          "Knowledge exchange and benchmarking against international best practice",
+          "Raise Malaysian competency standards toward international levels",
+          "Cross-border opportunities tied to the ASEAN Year of Skills agenda"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let's talk",
+    "title": "Connect with Jennifer directly.",
+    "body": "Whether you're building a workforce development system from the ground up, moving a team toward SKM / DKM / DLKM certification, or exploring HRD Corp claimable training — a 20-minute phone call usually tells us both whether we're a fit.",
+    "whatsappLabel": "WhatsApp · preferred",
+    "emailLabel": "Email",
+    "facebookLabel": "Facebook",
+    "branchesLabel": "Our branches",
+    "headquartersBadge": "Headquarters",
+    "branchBadge": "Branch",
+    "branches": [
+      { "label": "HQ Muar", "note": "Primary office · accredited training centre" },
+      { "label": "Johor Bahru", "note": "Serves JB metropolitan area · southern industrial corridor" },
+      { "label": "Kluang", "note": "Serves central Johor" },
+      { "label": "Seremban", "note": "Extends our footprint into Negeri Sembilan" }
+    ]
+  },
+  "footer": {
+    "brandLine1": "Character International Academy Sdn. Bhd.",
+    "brandLine3": "A JPK-accredited TVET institution based in Muar, Johor — serving Malaysia's workforce development agenda for more than two decades.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "hq": "HQ: No. 82, Jalan Ali, 84000 Muar, Johor",
+    "rights": "All rights reserved.",
+    "copyright": "© {year} Character International Academy Sdn. Bhd."
+  }
+}

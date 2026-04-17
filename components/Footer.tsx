@@ -1,4 +1,19 @@
+import { useTranslations } from 'next-intl';
+
 export function Footer() {
+  const t = useTranslations('footer');
+  const tNav = useTranslations('nav');
+  const tLeadership = useTranslations('leadership');
+
+  const links: [string, string][] = [
+    ['#about', tNav('about')],
+    ['#how', tNav('how')],
+    ['#services', tNav('services')],
+    ['#projects', tNav('projects')],
+    ['#team', tLeadership('eyebrow')],
+    ['#contact', tNav('contact')],
+  ];
+
   return (
     <footer className="relative overflow-hidden bg-navy-ink text-cream/70">
       {/* Subtle grain + gold accent line */}
@@ -19,36 +34,28 @@ export function Footer() {
               </span>
               <div>
                 <p className="font-display text-lg tracking-display text-cream">
-                  Character Academy
+                  {tNav('brand')}
                 </p>
                 <p className="text-xs uppercase tracking-[0.2em]">
-                  International <span className="text-gold">·</span> Since 2002
+                  {tNav('brandTagline')}
                 </p>
               </div>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
-              Character International Academy Sdn. Bhd.
+              {t('brandLine1')}
               <br />
               <span className="font-display tracking-display">名门全能美学职业培训学院</span>
               <br />
-              A JPK-accredited TVET institution based in Muar, Johor — serving Malaysia's
-              workforce development agenda for more than two decades.
+              {t('brandLine3')}
             </p>
           </div>
 
           <div>
             <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.24em] text-gold-light">
-              <span className="inline-block h-px w-4 bg-gold/60" /> Quick links
+              <span className="inline-block h-px w-4 bg-gold/60" /> {t('quickLinks')}
             </p>
             <ul className="space-y-2 text-sm">
-              {[
-                ['#about', 'About'],
-                ['#how', 'How we work'],
-                ['#services', 'Services'],
-                ['#projects', 'Projects'],
-                ['#team', 'Leadership'],
-                ['#contact', 'Contact'],
-              ].map(([href, label]) => (
+              {links.map(([href, label]) => (
                 <li key={href}>
                   <a
                     href={href}
@@ -64,7 +71,7 @@ export function Footer() {
 
           <div>
             <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.24em] text-gold-light">
-              <span className="inline-block h-px w-4 bg-gold/60" /> Contact
+              <span className="inline-block h-px w-4 bg-gold/60" /> {t('contact')}
             </p>
             <ul className="space-y-2 text-sm">
               <li>
@@ -94,7 +101,7 @@ export function Footer() {
                 </a>
               </li>
               <li className="pt-3 text-xs text-cream/50">
-                HQ: No. 82, Jalan Ali, 84000 Muar, Johor
+                {t('hq')}
               </li>
             </ul>
           </div>
@@ -102,8 +109,8 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-cream/10 pt-6 text-xs text-cream/50 md:flex-row md:items-center">
           <p>
-            © {new Date().getFullYear()} Character International Academy Sdn. Bhd.{' '}
-            All rights reserved.
+            {t('copyright', { year: new Date().getFullYear() })}{' '}
+            {t('rights')}
           </p>
           <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
             <span>SKM</span>
